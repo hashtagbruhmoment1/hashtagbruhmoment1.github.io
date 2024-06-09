@@ -1,0 +1,107 @@
+<!-- page2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips for Staying Safe Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+       .back-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+       .back-button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Avoiding Scams</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Be Wary of Phishing Emails</h2>
+            <p>Avoid responding to emails asking for personal information.</p>
+            <p>Verify the sender's email address before responding.</p>
+            <p>Be cautious of generic greetings, spelling mistakes, and urgent requests.</p>
+            <p>Never click on suspicious links or download attachments from unknown senders.</p>
+        </section>
+        <section>
+            <h2>Watch Out for Fake Websites</h2>
+            <p>Avoid entering personal information on unsecured websites.</p>
+            <p>Check the website's URL and look for "https" and a lock icon.</p>
+            <p>Be wary of websites with poor grammar, spelling mistakes, or low-quality design.</p>
+        </section>
+        <section>
+            <h2>Types of Phishing Attacks</h2>
+            <p>Spear phishing: targeted attacks on specific individuals or groups.</p>
+            <p>Whaling: targeted attacks on high-level executives or officials.</p>
+            <p>Smishing: phishing attacks via text message or SMS.</p>
+            <p>Vishing: phishing attacks via voice call.</p>
+            <p>Email phishing: the most common type of phishing attack.</p>
+            <p>Search engine phishing: phishing attacks via search engine results.</p>
+        </section>
+    </main>
+    <button class="back-button" onclick="location.href='Website.html'">Back</button>
+    <script>
+        // animation for sections
+        const scamSections = document.querySelectorAll('section');
+
+        scamSections.forEach((section) => {
+            section.addEventListener('mouseover', () => {
+                section.style.transform = 'cale(1.1)';
+                section.style.transition = 'transform 0.3s ease-in-out';
+                section.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.3)';
+                section.style.borderRadius = '10px';
+            });
+
+            section.addEventListener('mouseout', () => {
+                section.style.transform = 'cale(1)';
+                section.style.transition = 'transform 0.3s ease-in-out';
+                section.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+                section.style.borderRadius = '0px';
+            });
+        });
+    </script>
+</body>
+</html>
